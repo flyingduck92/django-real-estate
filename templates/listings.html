@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<a href="listing/create" class="inline-block mb-5 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+  Add Listing
+</a>
+
+{% for listing in listings %}
+
+  <div class="px-3 py-3 bg-gray-100 rounded-sm border-t">
+    <h3 class="text-3xl text-gray-900">{{ listing.title }}</h3>
+    <a href="listing/{{ listing.id }}" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
+      View details
+    </a>
+  </div>
+
+{% endfor %}
+
+{% endblock content %}

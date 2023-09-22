@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+  <div class="px-3 py-3 bg-gray-100 rounded-sm mb-5">
+    <h3 class="text-3xl text-gray-900">{{ listing.title }}</h3>
+    <img src="{{ listing.image.url }}" alt="{{ listing.title }}">
+    <p class="text-gray-900">{{ listing.price }}</p>
+    <p class="text-gray-900 text-sm">{{ listing.address }}</p>
+
+    {% if request.user.is_authenticated %}
+      <div class="mt-5 py-5 border-t border-gray-200">
+        <a class="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded" href="{% url 'update' pk=listing.id %}">
+          Update
+        </a>
+        <a class="ml-5 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" href="{% url 'delete' pk=listing.id %}">
+          Delete
+        </a>
+      </div>
+    {% endif %}
+  </div>
+
+<a class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" href={% url 'home' %}>Back to Home</a>
+
+{% endblock content %}
