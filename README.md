@@ -1,11 +1,6 @@
 # Django Crash Course - Real Estate
 This is a real estate app built using Django 4
 
-![listings](https://github.com/flyingduck92/django-real-estate/blob/main/public/listings.png?raw=true)
-![listing](https://github.com/flyingduck92/django-real-estate/blob/main/public/listing.png?raw=true)
-![create](https://github.com/flyingduck92/django-real-estate/blob/main/public/create.png?raw=true)
-![update](https://github.com/flyingduck92/django-real-estate/blob/main/public/Update.png?raw=true)
-
 ### Prerequisites
 
 Install the following prerequisites:
@@ -34,3 +29,10 @@ python manage.py runserver
 ### View the application
 
 Go to http://localhost:8000/ to view the application.
+
+### Screenshots
+
+![listings](https://github.com/flyingduck92/django-real-estate/blob/main/public/listings.png?raw=true)
+![listing](https://github.com/flyingduck92/django-real-estate/blob/main/public/listing.png?raw=true)
+![create](https://github.com/flyingduck92/django-real-estate/blob/main/public/create.png?raw=true)
+![update](https://github.com/flyingduck92/django-real-estate/blob/main/public/Update.png?raw=true)
